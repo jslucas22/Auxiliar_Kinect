@@ -12,7 +12,9 @@ namespace biblioteca.FuncoesBasicas
     {
         public static KinectSensor InicializarPrimeiroSensor(int anguloElevacaoInicial)
         {
-            KinectSensor kinect = KinectSensor.KinectSensors.First(sensor => sensor.Status == KinectStatus.Connected); kinect.Start(); kinect.ElevationAngle = anguloElevacaoInicial;
+            KinectSensor kinect = KinectSensor.KinectSensors.First(sensor => sensor.Status == KinectStatus.Connected); 
+            kinect.Start(); 
+            kinect.ElevationAngle = anguloElevacaoInicial;            
             return kinect;
         }   
     }
